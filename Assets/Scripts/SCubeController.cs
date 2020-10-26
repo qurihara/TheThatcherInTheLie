@@ -39,7 +39,8 @@ public class SCubeController : MonoBehaviour
         }
         else
         {
-            //フレーム毎speedの値分だけz軸方向に移動する
+            var velocity = new Vector3(0, -1, 0);
+            transform.localPosition += velocity * Time.fixedDeltaTime;
             this.gameObject.transform.Rotate(0, speed * 2, 0);
             //ゲームオーバーしていて画面がクリックされたとき
             if (Input.GetMouseButton(0))
