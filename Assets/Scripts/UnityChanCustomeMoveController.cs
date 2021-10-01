@@ -16,6 +16,9 @@ namespace UnityChan
     public class UnityChanCustomeMoveController : MonoBehaviour
     {
 
+        //from TM
+        public GameObject tmWebGL;
+
         public float animSpeed = 1.5f;              // アニメーション再生速度設定
         public float lookSmoother = 3.0f;           // a smoothing setting for camera motion
         public bool useCurves = true;               // Mecanimでカーブ調整を使うか設定する
@@ -78,7 +81,7 @@ namespace UnityChan
             currentBaseState = anim.GetCurrentAnimatorStateInfo(0); // 参照用のステート変数にBase Layer (0)の現在のステートを設定する
             rb.useGravity = true;//ジャンプ中に重力を切るので、それ以外は重力の影響を受けるようにする
 
-
+            string tmLabel = tmWebGL.GetComponent<TMWebGL>().tmLabel;
 
             // 以下、キャラクターの移動処理
             velocity = new Vector3(0, 0, v);        // 上下のキー入力からZ軸方向の移動量を取得
@@ -94,7 +97,7 @@ namespace UnityChan
                 velocity *= backwardSpeed;  // 移動速度を掛ける
             }
 
-            if (Input.GetButtonDown("Jump") || Input.GetMouseButton(0))
+            if (Input.GetButtonDown("Jump") || Input.GetMouseButton(0) || tmLabel == "neutral")
             {   // スペースキーを入力したら
 
                 //アニメーションのステートがLocomotionの最中のみジャンプできる
