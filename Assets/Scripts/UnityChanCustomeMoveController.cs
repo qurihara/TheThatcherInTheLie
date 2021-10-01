@@ -97,7 +97,7 @@ namespace UnityChan
                 velocity *= backwardSpeed;  // 移動速度を掛ける
             }
 
-            if (Input.GetButtonDown("Jump") || Input.GetMouseButton(0) || tmLabel == "neutral")
+            if (Input.GetButtonDown("Jump") || Input.GetMouseButton(0) || tmLabel == "jump")
             {   // スペースキーを入力したら
 
                 //アニメーションのステートがLocomotionの最中のみジャンプできる
