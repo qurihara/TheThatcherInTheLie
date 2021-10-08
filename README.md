@@ -5,6 +5,9 @@ DEMO:
 
 [https://qurihara.github.io/TheThatcherInTheLie/web/index.html]
 
+
+[currently not working]
+
 TeachableMachine integration demo:
 
 [https://qurihara.github.io/TheThatcherInTheLie/webGLBuild/index.html]
