@@ -7,4 +7,6 @@ DEMO:
 
 TeachableMachine integration demo:
 
-[https://qurihara.github.io/TheThatcherInTheLie/WebGLBuild/index.html]
+[https://qurihara.github.io/TheThatcherInTheLie/webGLBuild/index.html]
+
+Push start button to activate camera. Lift your right hand to make Unity-chan jump.
