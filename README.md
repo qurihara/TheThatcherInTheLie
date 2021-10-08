@@ -8,7 +8,7 @@ DEMO:
 
 
 
-[currently not working]TeachableMachine integration demo:
+TeachableMachine integration demo:
 
 [https://qurihara.github.io/TheThatcherInTheLie/webGLBuild/index.html]
 
